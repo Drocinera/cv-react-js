@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+#  React CV
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tech used : 
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- React
+- Font Awesome
 
 ## Available Scripts
 
