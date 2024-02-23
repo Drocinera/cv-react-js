@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Nav from "src/components/Nav.jsx";
-import Home from "./Pages/Home.jsx";
-import Realisation from "./Pages/Realisation.jsx";
-import Service from "./Pages/Service.jsx";
-import Blog from "./Pages/Blog.jsx";
-import Contact from "./Pages/Contact.jsx";
-import MentionLegal from "./Pages/MentionLegal.jsx";
+import Home from "./components/Home.jsx";
+import Realisation from "./components/Realisation.jsx";
+import Service from "./components/Service.jsx";
+import Blog from "./components/Blog.jsx";
+import Contact from "./components/Contact.jsx";
+import MentionLegal from "./components/MentionLegal.jsx";
+import Nav from "./components/Nav.jsx";
 import './App.css';
 
 

@@ -19,7 +19,7 @@ const Nav = () => {
             <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <Link to="/contact">ME contacter</Link>
+            <Link to="/contact">Me contacter</Link>
           </li>
           <li>
             <Link to="/mention-legal">Mentions légal</Link>

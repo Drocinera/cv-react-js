@@ -1,3 +1,14 @@
+import React from "react";
+
+const Contact = () => {
+    return (
+        <main className="container">
+          <h1>Page de contact</h1>
+        </main>
+      );
+    };
+    
+    export default Contact;
 /*Un formulaire de contact intégrant les champs nom, e-mail, numéro de téléphone, sujet
 et message (tous obligatoires).
 ● Les coordonnées de John Doe : adresse, numéro de téléphone et Google Map.
