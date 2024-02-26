@@ -7,6 +7,7 @@ import Blog from "./components/Blog.jsx";
 import Contact from "./components/Contact.jsx";
 import MentionLegal from "./components/MentionLegal.jsx";
 import Nav from "./components/Nav.jsx";
+import Footer from "./components/Footer.jsx";
 import './App.css';
 
 
@@ -22,6 +23,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/mention-legal" element={<MentionLegal/>} />
         </Routes>
+
+        <Footer />
     </div>
   );
 }
