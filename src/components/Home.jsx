@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
     return (
         <main className="container">
-          <h1>Page d'Accueil</h1>
+          <h1 class="justify-content-center"> Page d'Accueil</h1>
         </main>
       );
     };
