@@ -13,7 +13,7 @@ const Nav = () => {
         <span class="navbar-toggler-icon"></span>
       </button>
         <div class="nav justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline text-uppercase">
           <li class="nav-item">
             <Link class="nav-link "to="/">Acceuil</Link>
           </li>

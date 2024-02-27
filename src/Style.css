@@ -1,0 +1,14 @@
+.active {
+    color:red;
+}
+
+a {
+    text-decoration: none;
+}
+
+#scrollToTop{
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+}

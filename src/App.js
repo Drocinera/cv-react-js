@@ -8,7 +8,7 @@ import Contact from "./components/Contact.jsx";
 import MentionLegal from "./components/MentionLegal.jsx";
 import Nav from "./components/Nav.jsx";
 import Footer from "./components/Footer.jsx";
-import './App.css';
+import './Style.css';
 
 
 function App() {
@@ -30,6 +30,29 @@ function App() {
 }
 
 export default App;
+
+document.addEventListener("scroll", handleScroll);
+var scrollToTop = document.querySelector(".scrollToTop");
+
+function handleScroll() {
+  var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var Ratio = 0.5;
+
+  if ((document.documentElement.scrollTop / scrollableHeight ) > Ratio) {
+    scrollToTop.style.display = "block";
+  } else {
+    scrollToTop.style.display = "none";
+  }
+}
+
+topScroll.addEventListener("click", scrollToTop);
+
+function topScroll() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
 
 
 
