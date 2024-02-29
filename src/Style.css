@@ -83,10 +83,23 @@ a {
 .About {
 	margin-left: 1em;
 	margin-right: 1em;
+	
 }
 
 
 .progressBar {
 	padding-left: 1em;
 	padding-right: 1em;
+}
+
+/* Page Service */
+
+.service-container {
+	background-image: url("/public/images/services-bg.jpg");
+	background-size: cover;
+	background-color: #EEE;
+}
+
+.card {
+	background-color: #EEE;
 }
