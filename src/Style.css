@@ -1,5 +1,21 @@
-.active {
-    color:red;
+body {
+	background-color: #EEE ;
+}
+
+p, li {
+	color :#444;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #1e1e1e;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 600;
+}
+
+strong {
+	color:#000000;
 }
 
 a {
@@ -11,4 +27,66 @@ a {
 	position: fixed;
 	bottom: 50px;
 	left: 50px;
+}
+
+/*-- Home --*/
+
+.home-container::before {
+	background-color: rgba(0,0,0,0.3) ;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	content:"";
+}
+
+/*Ecran large*/
+@media screen and (min-width: 768px) {
+	.home-container {
+		background-image: url("/public/images/banner.jpg");
+		background-size : cover;
+		position:relative;
+	}
+}
+	
+	/* Tablette uniquement */
+	@media screen and (min-width: 768px) and (max-width: 1024px){
+		.home-container {
+			background-image: url("/public/images/banner-tablette.jpg");
+			background-size : cover;
+			position:relative;
+		}
+	}
+
+	/*Mobile uniquement*/
+	@media screen and (max-width: 768px) {
+		.home-container {
+			background-image: url("/public/images/banner-mobile.jpg");
+			background-size : cover;
+			position:relative;
+		}
+	}
+
+.buttonLink {
+	display: block;
+    padding: 0.6em;
+    border-radius: 5px;
+    background:#aaa;
+    border: 1px solid #444;
+	text-align: center;
+	color:#444;
+	background-color: #0d6efd;
+	z-index: 5;
+}
+
+.About {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+
+.progressBar {
+	padding-left: 1em;
+	padding-right: 1em;
 }
