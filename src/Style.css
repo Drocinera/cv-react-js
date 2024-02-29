@@ -14,6 +14,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 600;
 }
 
+strong {
+	color:#000000;
+}
+
 a {
     text-decoration: none;
 }
@@ -27,9 +31,14 @@ a {
 
 /*-- Home --*/
 
-.home-container {
+.home-container::before {
 	background-color: rgba(0,0,0,0.3) ;
-	
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	content:"";
 }
 
 /*Ecran large*/
@@ -37,6 +46,7 @@ a {
 	.home-container {
 		background-image: url("/public/images/banner.jpg");
 		background-size : cover;
+		position:relative;
 	}
 }
 	
@@ -45,6 +55,7 @@ a {
 		.home-container {
 			background-image: url("/public/images/banner-tablette.jpg");
 			background-size : cover;
+			position:relative;
 		}
 	}
 
@@ -53,6 +64,7 @@ a {
 		.home-container {
 			background-image: url("/public/images/banner-mobile.jpg");
 			background-size : cover;
+			position:relative;
 		}
 	}
 
@@ -65,4 +77,16 @@ a {
 	text-align: center;
 	color:#444;
 	background-color: #0d6efd;
+	z-index: 5;
+}
+
+.About {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+
+.progressBar {
+	padding-left: 1em;
+	padding-right: 1em;
 }
