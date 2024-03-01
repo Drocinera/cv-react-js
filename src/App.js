@@ -31,7 +31,7 @@ function App() {
 
 export default App;
 
-/*document.addEventListener("scroll", handleScroll);
+document.addEventListener("scroll", handleScroll);
 var scrollToTop = document.querySelector(".scrollToTop");
 
 function handleScroll() {
@@ -52,7 +52,7 @@ function topScroll() {
     top: 0,
     behavior: "smooth"
   });
-}*/
+}
 
 
 
