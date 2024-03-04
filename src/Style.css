@@ -107,3 +107,27 @@ a {
 .card {
 	background-color: #EEE;
 }
+
+/* Page Contact */
+
+.contact-container::before {
+	background-color: rgba(0,105, 255, 0.5) ;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	content:"";
+}
+@media screen {
+	.contact-container {
+		background-image: url("/public/images/contact-bg.jpg");
+		background-size : cover;
+		position:relative;
+	}
+}
+
+.formulaire ,.contact-titre , .infoJohn {
+	filter: contrast(100%);
+}
+
