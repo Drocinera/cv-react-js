@@ -4,7 +4,7 @@ import { Link} from "react-router-dom";
 const Nav = () => {
   return (
     <header className="header-containeur">
-     <nav className="navbar navbar-expand-lg bg-body-tertiary">
+     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src="/images/apple-touch-icon.png" alt="Bootstrap" title="CV Logo" width="30" height="24"/>

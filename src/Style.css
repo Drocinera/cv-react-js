@@ -92,6 +92,18 @@ a {
 	padding-right: 1em;
 }
 
+/* Footer */
+
+.footer-container {
+	background-color: #EEE;
+}
+
+/* Page Header */
+
+.header-container {
+	background-color: #EEE;
+}
+
 /* Page Service */
 
 .service-container {

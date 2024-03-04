@@ -116,5 +116,4 @@ const Blog = () => {
                     };
     
     export default Blog;
-/*Une introduction de 6 articles, présentés sous forme de Bootstrap Card.
-                <img src="/images/blog/coder.jpg" class="card-img-right" alt="..."/>  */
+
