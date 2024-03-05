@@ -1,19 +1,25 @@
 import React from "react";
 
+export function ArticleBlog (props) {
+  return(
+    <p>{props.blog}</p>
+  );
+}
+
 const Blog = () => {
     return (
         <main className="blog-container p-3">
           <article>
             <h1 className="text-center">Mes articles</h1>
-            <a href="#">
+            <a href="#blogArticle1">
             <div class="card mb-3 border-primary mb-3 text-bg-danger mb-3" style={{maxWidth: "90em"}}>
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="/images/blog/coder.jpg" class="img-fluid rounded-start" alt="Image décorative de ligne de code"/>
+                  <img src="/images/blog/coder.jpg" class="img-fluid rounded-start" alt="ligne de code"/>
                     </div>
-                      <div class="col-md-8">
+                      <div class="col-md-8" id="blogArticle1">
                         <div class="card-body ">
-                          <h5 class="card-title">Les bases pour apprendre à coder</h5>
+                          <h5 class="card-title"><ArticleBlog blog="Les bases pour apprendre à coder"/></h5>
                           <p class="card-text">Nunc pulvinar arcu id tellus convallis, id vehicula libero congue. Integer eu ex vitae nunc scelerisque cursus. 
                           Nam erat nisi, commodo vel ipsum feugiat, tincidunt tincidunt dolor. Aliquam porta diam a lacinia pharetra. Vivamus et orci est. 
                           Donec mattis eleifend elit, at gravida justo euismod vel. Donec ullamcorper magna quis erat pellentesque pretium. Nullam posuere commodo nisl, in bibendum urna sollicitudin et.
@@ -23,15 +29,15 @@ const Blog = () => {
                     </div>
                   </div>
                   </a>
-                  <a href="#">
+                  <a href="#blogArticle2">
                   <div class="card mb-3 border-secondary mb-3 text-bg-dark mb-3" style={{maxWidth: "90em"}}>
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="/images/blog/croissance.jpg" class="img-fluid rounded-start" alt="Image décorative de croissance d'une plante"/>
+                        <img src="/images/blog/croissance.jpg" class="img-fluid rounded-start" alt="croissance d'une plante"/>
                           </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8" id="blogArticle2">
                               <div class="card-body">
-                                <h5 class="card-title">Gérer la croissance de son site web</h5>
+                                <h5 class="card-title"><ArticleBlog blog="Gérer la croissance de son site web"/></h5>
                                 <p class="card-text">Maecenas in odio in magna hendrerit cursus non in purus. Suspendisse molestie blandit tellus, eu dapibus ipsum fringilla non. Donec mollis velit eget accumsan finibus.
                                  In hac habitasse platea dictumst. Mauris rhoncus neque vel justo laoreet, at feugiat quam tempus. Praesent a facilisis metus. 
                                  In in porta ex. Nullam vel arcu ut elit ultricies volutpat. Nunc justo lacus, fringilla quis porta vitae, molestie feugiat ante. 
@@ -41,15 +47,15 @@ const Blog = () => {
                           </div>
                         </div>
                         </a>
-                        <a href="#">
+                        <a href="#blogArticle3">
                         <div class="card mb-3 border-success mb-3 text-bg-info mb-3" style={{maxWidth: "90em"}}>
                           <div class="row g-0">
                             <div class="col-md-4">
-                              <img src="/images/blog/google.jpg" class="img-fluid rounded-start" alt="Image décorative d'un pc avec google"/>
+                              <img src="/images/blog/google.jpg" class="img-fluid rounded-start" alt="un pc avec google"/>
                             </div>
-                              <div class="col-md-8">
+                              <div class="col-md-8" id="blogArticle3">
                                 <div class="card-body">
-                                  <h5 class="card-title">Bien intégrer son site sur le web</h5>
+                                  <h5 class="card-title"><ArticleBlog blog="Bien intégrer son site sur le web"/></h5>
                                   <p class="card-text">Suspendisse potenti. Donec in mattis tortor. Nullam viverra risus non tellus pellentesque fringilla.
                                    Aliquam sit amet sem quis ante pulvinar dignissim. Praesent scelerisque vulputate orci, vel sagittis enim euismod a. 
                                   Quisque vitae sagittis tellus. Etiam mollis mollis ante quis vehicula.</p>
@@ -58,11 +64,11 @@ const Blog = () => {
                             </div>
                           </div>
                           </a>
-                          <a href="#">
+                          <a href="#blogArticle4">
                           <div class="card mb-3 border-danger mb-3 text-bg-success mb-3" style={{maxWidth: "90em"}}>
-                            <div class="row g-0">
+                            <div class="row g-0" id="blogArticle4">
                               <div class="col-md-4">
-                                <img src="/images/blog/screens.jpg" class="img-fluid rounded-start" alt="Image décorative de plusieurs écran multimédia"/>
+                                <img src="/images/blog/screens.jpg" class="img-fluid rounded-start" alt="plusieurs écran multimédia"/>
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
@@ -73,11 +79,11 @@ const Blog = () => {
                             </div>
                           </div>
                           </a>
-                          <a href="#">
+                          <a href="#blogArticle5">
                           <div class="card mb-3 border-info mb-3 text-bg-secondary mb-3" style={{maxWidth: "90em"}}>
-                            <div class="row g-0">
+                            <div class="row g-0" id="blogArticle5">
                               <div class="col-md-4">
-                                <img src="/images/blog/seo.jpg" class="img-fluid rounded-start" alt="Image décorative de nombreux mots en lien avec le SEO"/>
+                                <img src="/images/blog/seo.jpg" class="img-fluid rounded-start" alt="nombreux mots en lien avec le SEO"/>
                               </div>
                                 <div class="col-md-8">
                                   <div class="card-body">
@@ -91,11 +97,11 @@ const Blog = () => {
                               </div>
                             </div>
                             </a>
-                            <a href="#">
+                            <a href="#blogArticle6">
                             <div class="card mb-3 border-dark mb-3 text-bg-primary mb-3s" style={{maxWidth: "90em"}}>
-                              <div class="row g-0">
+                              <div class="row g-0" id="blogArticle6">
                                 <div class="col-md-4">
-                                  <img src="/images/blog/technos.png" class="img-fluid rounded-start" alt="Image décorative de plusieurs technologies en lien avec le developpement"/>
+                                  <img src="/images/blog/technos.png" class="img-fluid rounded-start" alt="plusieurs technologies en lien avec le developpement"/>
                                 </div>
                                 <div class="col-md-8">
                                   <div class="card-body">

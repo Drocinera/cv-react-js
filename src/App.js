@@ -22,6 +22,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mention-legal" element={<MentionLegal/>} />
+          
         </Routes>
 
         <Footer />
