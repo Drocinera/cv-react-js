@@ -2,8 +2,8 @@ import React from "react";
 
 const MentionLegal = () => {
     return (
-        <main className="mentionLegalContainer">
-          <h1 className="text-center">Mentions Légal du site</h1>
+        <main className="mentionLegalContainer p-3">
+          <h1 className="text-center">MENTION LEGAL DU SITE</h1>
           <div className="accordion" id="acclassNamecordione">
             <div className="accordion-item">
               <h2 className="accordion-header">
@@ -48,8 +48,3 @@ const MentionLegal = () => {
     };
     
     export default MentionLegal;
-/*L’éditeur du site
-● L’hébergeur du site
-● Les crédits, avec un lien vers le site de Pixabay pour les images.
-La présentation est réalisée en utilisant le composant accordéon de Bootstrap.
-Cette page ne doit pas être indexée par les moteurs de recherche*/
