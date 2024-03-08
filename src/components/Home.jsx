@@ -1,19 +1,20 @@
 import React from "react";
+import Profile from "./GithubProfile.jsx";
 
 const Home = () => {
     return (
         <main>
           <div>
             <div className="home-container">
-              <h1 className="text-center p-4">John Doe</h1>
+              <h1 className="text-center p-4">JOHN DOE</h1>
                 <h2 className="text-center p-4">Freelance Développeur Web</h2>
                   <div className="d-grid gap-2 col-6 mx-auto">
                     <a href="#aPropos" className="buttonLink">En savoir plus sur moi</a>
                   </div>
-              </div>
-               <section id="aPropos" className="mb-3 mt-3">
+            </div>
+               <section id="aPropos" className="aPropos mb-3 pt-2">
                     <div className="text-center">
-                      <img src="/images/about.jpg" alt="Photo de John Doe" className="pb-2"/>
+                      <img src="/images/about.jpg" alt="John Doe" className="pb-2"/>
                         <p className="About">
                           Je suis <strong>John doe</strong>. Comme nous le savons tous, l'identité de John Doe est inconnue. Je voulais juste contribuer sans être connu.
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus vel purus sodales sodales. Sed ut mauris et ante varius sagittis. Curabitur et lectus tortor. 
@@ -43,6 +44,20 @@ const Home = () => {
                             </div>
                       </div>
                     </div>
+                    <div className="accordion" id="accordionGithub">
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Profil Github
+                          </button>
+                        </h2>
+                        <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionGithub">
+                          <div className="accordion-body">
+                            <Profile/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </section>
                 </div>
               </main>
@@ -50,5 +65,3 @@ const Home = () => {
           };
     
     export default Home;
-
-
